@@ -8,8 +8,6 @@
 	<meta name="theme-color" content="#000000">
 	<meta name="description" content="Echo Music Tutoring is an international organization dedicated to providing free music lessons for kids around the globe.">
 	<title>Echo Music Tutoring</title>
-	<script src="mapdata.js"></script>
-	<script src="usmap.js"></script>
 	<script src="navbar.js"></script>
 	<link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="styles.css" />
@@ -20,10 +18,14 @@
 </head>
 
 <body>
-    <div class="navbar">
+    <div class="navbar" id="navbar">
+
         <a href="index.html" class="navbarLogo">echo</a>
 
-        <div class="navbarLinkHolder">
+        <div id="navbarLinks" class="navbarLinkHolder">
+            <a href="javascript:void(0);" class="navbarIcon" onclick="responsiveNavbar()">
+                <i class="fa fa-bars"></i>
+              </a>
             <a class="navbarLink">About</a>
             <a class="navbarLink">Our Team</a>
             <a class="navbarLink">Become a Tutor</a>
