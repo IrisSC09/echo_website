@@ -134,6 +134,7 @@ body {
   font-weight: 700;
   color: #7c73ff;
   font-size: 3em;
+  text-align: center;
 }
 
 .homeInfo {
@@ -273,11 +274,13 @@ body {
   width: 100%;
   height: 45vh;
   background-image: url(imgs/followus.webp);
+  background-size: cover;
   display: flex;
   flex-flow: column;
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  justify-content: center;
 }
 
 .homeFollowTitle {
@@ -312,7 +315,7 @@ body {
 }
 
 #discord {
-  background-image: url("imgs/discord.png");
+  background-image: url("imgs/discord.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -384,26 +387,23 @@ body {
   cursor: pointer;
 }
 
-.homeContactBtnHolder {
-  display: flex;
-  flex-flow: row;
-  margin-top: 15px;
-  justify-content: center;
-}
-
-.homeContactBtn {
+.homeContactEmail {
+  border: none;
   background-color: #7c73ff;
   color: white;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   text-align: center;
-  font-size: 1.25em;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-left: 5px;
-  margin-right: 5px;
+  width: 16em;
+  margin-top: 10px;
+}
+
+.homeContactEmail:focus {
+  outline: none;
 }
 
 .homeContactBtn:hover {
@@ -692,6 +692,10 @@ a {
     display: none;
 }
 @media only screen and (max-width: 768px) {
+
+  .homeFollowIcons {
+    height: 32%;
+  }
   .aboutDescText {
     font-size: 1.09em;
   }
@@ -826,6 +830,7 @@ a {
   .homeJoinText {
     width: calc(100% - 20px);
     height: 100%;
+    text-align: center;
   }
 
   .homeJoinTitle {
@@ -917,5 +922,26 @@ a {
   
   .infoPageHeader {
     font-size: 2em;
+  }
+
+  .homeAboutHeader {
+    font-size: 2.5em;
+  }
+  
+  .homeLandingHeader {
+    font-size: 4.5em;
+  }
+  
+  .homeAboutUs {
+    width: calc(100% - 20px - 40px);
+    padding: 10px;
+  }
+  
+  .homeFollowTitle {
+    font-size: 2.5em;
+  }
+
+  .homeFollowIcons {
+    height: 27%;
   }
 }
