@@ -485,12 +485,15 @@ a {
 .aboutDescInfo {
   display: flex;
   margin-top: 25px;
+  max-width: 100%;
+
 }
 
 .aboutDescPhotoHolder {
   display: flex;
   flex-flow: column;
   width: 40%;
+  justify-content: center;
 }
 
 .aboutDescPhotoCap {
@@ -513,10 +516,13 @@ a {
 .aboutDescText {
   font-family: "Montserrat", sans-serif;
   color: #140a3a;
-  font-size: 1.5em;
+  font-size: calc(.2em + 1vw);  
   font-weight: 300;
 }
 
+.aboutDescPhoto {
+  object-fit: contain;
+}
 .aboutBottomText {
   width: 65%;
   padding: 10px;
@@ -552,9 +558,6 @@ a {
     width: 90%;
   }
 
-  .aboutDescText {
-    font-size: 1.4em;
-  }
 }
 
 .teamImage {
@@ -697,7 +700,7 @@ a {
     height: 32%;
   }
   .aboutDescText {
-    font-size: 1.09em;
+    font-size: 0.85em;
   }
   .infoPageHeader {
     font-size: 5em;
