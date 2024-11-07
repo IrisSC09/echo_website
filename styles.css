@@ -144,7 +144,7 @@ body {
 }
 
 .homeAboutDesc {
-  margin-top: 10px;
+  margin-top: 5px;
   text-align: center;
   font-size: 1.5em;
   font-family: "Montserrat", sans-serif;
@@ -399,7 +399,8 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   width: 16em;
-  margin-top: 10px;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
 }
 
 .homeContactEmail:focus {
@@ -546,18 +547,6 @@ a {
     width: 80%;
   }
 
-  .aboutUsTitle {
-    font-size: 7.5em;
-  }
-
-  .aboutDescBody {
-    width: 90%;
-  }
-
-  .aboutBottomText {
-    width: 90%;
-  }
-
 }
 
 .teamImage {
@@ -694,21 +683,150 @@ a {
 .responsiveHome {
     display: none;
 }
+
+.homeAboutUsData {
+  display: flex;
+  margin-top: 5px;
+}
+
+.homeAboutDataHolder {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+}
+
+.darkerData {
+  color: #140a3a;
+}
+
+.dataEnd {
+  margin-left: 0.15rem;
+}
+
+.dataPlus {
+  position: relative;
+  right: 0.3rem;
+}
+
+@property --num {
+  syntax: '<integer>';
+  initial-value: 1;
+  inherits: false;
+}
+
+@keyframes countryCounter {
+  from {
+    --num: 1;
+  }
+  to {
+    --num: 14;
+  }
+}
+
+@keyframes schoolCounter {
+  from {
+    --num: 1;
+  }
+  to {
+    --num: 36;
+  }
+}
+
+#countries {
+  animation: countryCounter 3s forwards;
+  counter-reset: num var(--num);
+}
+
+#countries::after {
+  content: counter(num);
+}
+
+#schools {
+  animation: schoolCounter 3s forwards;
+  counter-reset: num var(--num);
+}
+
+#schools::after {
+  content: counter(num);
+}
+
+.homeContactBox {
+  margin-top: 10px;
+  display: flex;
+}
+
+.contactHolderOther {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.otherContactMargin {
+  margin-top: 15px;
+}
+
+.contactOurTeam {
+  background-color: #ffebff;
+}
+
+.offeredHolder {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.instrument {
+  flex: 1 0 33%;
+}
+
+@media only screen and (min-width: 769px) {
+  .contactAbout {
+    width: calc(65% - 50px - 40px);
+  }
+}
 @media only screen and (max-width: 768px) {
 
   .homeFollowIcons {
     height: 32%;
   }
   .aboutDescText {
-    font-size: 0.85em;
+    font-size: 1em;
   }
-  .infoPageHeader {
-    font-size: 5em;
-  }
+
   .aboutUsDesc {
     width: 90%;
     font-size: 1.75em;
   }
+
+  .aboutUsTitle {
+    font-size: 7.5em;
+  }
+
+  .aboutDescBody {
+    width: 90%;
+  }
+
+  .aboutBottomText {
+    width: 90%;
+  }
+
+  .homeAboutUsData {
+    flex-flow: column;
+  }
+
+  .homeAboutUsDataHolder {
+    margin: none;
+  }
+
+  .infoPageHeader {
+    font-size: 5em;
+  }
+
+  .instrument {
+    flex: 1 0 34%;
+  }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -887,8 +1005,36 @@ a {
     width: 100%;
   }
 
+  .dataSize {
+    font-size: 2.3em;
+  }
+
+  .dataEnd {
+    margin-left: 0.1rem;
+  }
+
+  .homeContactBox {
+    flex-flow: column;
+  }
+
+  .homeContactEmail {
+    margin-left: none;
+    margin-right: none;
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+  }
+
   .infoPageHeader {
     font-size: 2.5em;
+  }
+
+  
+  .instrument {
+    flex: 1 0 51%;
+  }
+
+  .instrumentHeader {
+    font-size: 2.15em;
   }
 }
 
@@ -899,9 +1045,6 @@ a {
   }
   .aboutUsDesc {
     font-size: 1.35em;
-  }
-  .aboutDescText {
-    font-size: 1em;
   }
 
   .aboutDescPhotoHolder {
@@ -923,10 +1066,6 @@ a {
     padding-right: 5px;
   }
   
-  .infoPageHeader {
-    font-size: 2em;
-  }
-
   .homeAboutHeader {
     font-size: 2.5em;
   }
@@ -946,5 +1085,13 @@ a {
 
   .homeFollowIcons {
     height: 27%;
+  }
+
+  .dataSize {
+    font-size: 2em;
+  }
+
+  .infoPageHeader {
+    font-size: 2em;
   }
 }

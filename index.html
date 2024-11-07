@@ -10,6 +10,7 @@
 	<title>Echo Music Tutoring</title>
 	<script src="navbar.js"></script>
     <script src="email.js"></script>
+    <script src="preloadImages.js"></script>
 	<link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="styles.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,6 +47,18 @@
         <div class="homeAboutUs">
             <span class="homeAboutHeader">About Us</span>
             <span class="homeAboutDesc">We are a youth organization aiming to promote passion for music in young musicians! Run entirely by high school students, we provide free tutoring sessions for students of all ages, completely online! With our mentorship, we hope to spread our love of music to everyone, regardless of background or experience!</span>
+            <div class="homeAboutUsData">
+                <div class="homeAboutDataHolder">
+                    <span class="homeAboutHeader dataSize" id="countries"></span>
+                    <span class="homeAboutHeader darkerData dataSize dataPlus">+</span>
+                    <span class="homeAboutHeader darkerData dataEnd dataSize">countries</span>
+                </div>
+                <div class="homeAboutDataHolder">
+                    <span class="homeAboutHeader dataSize" id="schools"></span>
+                    <span class="homeAboutHeader darkerData dataSize dataPlus">+</span>
+                    <span class="homeAboutHeader darkerData dataEnd dataSize">schools</span>
+                </div>            
+            </div>
         </div>
         <div class="homeWhatWeDo">
             <span class="homeWhatTitle">We offer...</span>
@@ -107,7 +120,10 @@
         <div class="homeAboutUs homeBottom">
             <span class="homeAboutHeader">Contact Us</span>
             <span class="homeAboutDesc">Feel free to contact us if you have any questions or concerns! We will reply to you as soon as possible! Our mission has always been to support the love of music -- if you would like to support us, please follow us on our social media and donate to your local music program! </span>
-            <input class="homeContactEmail" id="emailButton" value="shareyoursound01@gmail.com" readonly>
+            <div class="homeContactBox">
+                <input class="homeContactEmail" id="emailButton" value="shareyoursound01@gmail.com" readonly>
+                <input class="homeContactEmail" id="emailButton" value="+1 (248)-924-0954" readonly>
+            </div>
         </div>
     </div>
 </body>
