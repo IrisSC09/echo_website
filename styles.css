@@ -56,7 +56,7 @@ body {
 }
 
 #homeLandingImg {
-  background-image: url(imgs/homeimage.png);
+  background-image: url(imgs/homeimage.avif);
 }
 
 .homeLandingHeader {
@@ -182,7 +182,7 @@ body {
 }
 
 #fluteImg {
-  background-image: url(imgs/flute.jpeg);
+  background-image: url(imgs/flute.avif);
 }
 
 #bariImg {
@@ -190,11 +190,11 @@ body {
 }
 
 #celloImg {
-  background-image: url(imgs/cello.jpg);
+  background-image: url(imgs/cello.avif);
 }
 
 #onlineImg {
-  background-image: url(imgs/online.jpg);
+  background-image: url(imgs/online.avif);
 }
 .homeWhatTitle {
   font-family: "K2D", sans-serif;
@@ -620,47 +620,47 @@ a {
 }
 
 #img1 {
-    background-image: url(imgs/team/1.jpg)
+    background-image: url(imgs/team/1.avif)
 }
 
 #img2 {
-    background-image: url(imgs/team/2.jpg)
+    background-image: url(imgs/team/2.avif)
 }
 
 #img3 {
-    background-image: url(imgs/team/3.jpg)
+    background-image: url(imgs/team/3.avif)
 }
 
 #img4 {
-    background-image: url(imgs/team/4.jpg)
+    background-image: url(imgs/team/4.avif)
 }
 
 #img5 {
-    background-image: url(imgs/team/5.jpg)
+    background-image: url(imgs/team/5.avif)
 }
 
 #img6 {
-    background-image: url(imgs/team/6.jpg)
+    background-image: url(imgs/team/6.avif)
 }
 
 #img7 {
-    background-image: url(imgs/team/7.jpg)
+    background-image: url(imgs/team/7.avif)
 }
 
 #img8 {
-    background-image: url(imgs/team/8.jpg)
+    background-image: url(imgs/team/8.avif)
 }
 
 #img9 {
-    background-image: url(imgs/team/9.jpg)
+    background-image: url(imgs/team/9.avif)
 }
 
 #img10 {
-    background-image: url(imgs/team/10.jpg)
+    background-image: url(imgs/team/10.avif)
 }
 
 #img11 {
-    background-image: url(imgs/team/11.jpg)
+    background-image: url(imgs/team/11.avif)
 }
 
 .activeImage {
