@@ -1,4 +1,4 @@
-let images = ["imgs/aboutusimg.webp", "imgs/bari.webp", "imgs/catherine.avif", "imgs/cello.avif", "imgs/discord.svg", "imgs/flute.avif", "imgs/followus.webp", "imgs/ig.webp", "imgs/iris.avif", "imgs/joinus.webp", "imgs/linktree.webp", "imgs/online.avif", "imgs/scheduleimg.webp"]
+let images = ["imgs/aboutusimg.webp", "imgs/bari.webp", "imgs/catherine.avif", "imgs/cello.avif", "imgs/discord.svg", "imgs/flute.avif", "imgs/followus.webp", "imgs/ig.webp", "imgs/iris.avif", "imgs/joinus.webp", "imgs/linktree.webp", "imgs/online.avif", "imgs/scheduleimg.webp", "imgs/cookie.avif"]
 
 for (i of images) {
     let img = new Image()

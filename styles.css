@@ -91,6 +91,9 @@ body {
   font-family: "SUSE", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .homeLandingLink:hover {
@@ -99,6 +102,7 @@ body {
   border-color: #140a3a;
 }
 .homeLandingLinkHolder {
+  display: flex;
   margin-top: 50px;
 }
 
@@ -780,12 +784,31 @@ a {
   flex: 1 0 33%;
 }
 
+#cookieimg {
+  background-image: url(imgs/cookie.avif)
+}
+
+.eventDesc {
+  width: 70vw;
+}
+
+#lastevent {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
 @media only screen and (min-width: 769px) {
   .contactAbout {
     width: calc(65% - 50px - 40px);
   }
 }
 @media only screen and (max-width: 768px) {
+  .homeLandingLinkHolder {
+    flex-flow: column;
+  }
+  .homeLandingLink {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+  }
 
   .homeFollowIcons {
     height: 32%;
@@ -830,6 +853,10 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
+  .eventDesc {
+    width: 95vw;
+  }
+  
   .teamTitle {
     font-size: 2.5em;
   }
