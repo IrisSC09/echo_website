@@ -5,7 +5,7 @@ for (i of images) {
     img.src=i
 }
 
-for (let e = 1; e<12; e++) {
+for (let e = 1; e<11; e++) {
     let fp = `imgs/team/${e}.avif`
     let img = new Image()
     img.src=fp
