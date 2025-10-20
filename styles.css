@@ -575,7 +575,7 @@ a {
 
 .team-section {
   text-align: center;
-  background: #ffebff;
+  background: linear-gradient(180deg, #fff5ff 0%, #f9e6ff 100%);
   padding: 50px 0;
 }
 
@@ -586,34 +586,52 @@ a {
   margin-bottom: 5px;
 }
 
-.team-sub {
-  font-size: 1rem;
-  color: #666;
+.team-subtitle {
+  font-size: 1.8rem;
+  font-family: "SUSE", sans-serif;
+  color: #6a4ba3;
+  text-align: center;
   margin-bottom: 40px;
+  font-weight: 600;
 }
 
 .team-grid {
-  background: #ffebff;
+  background: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
   gap: 40px;
+  max-width: 1000px; 
   justify-items: center;
-  max-width: 1000px;
+  justify-content: center;
   margin: 0 auto;
 }
 
 .team-card {
-  background: #ffebff;
-  border: 1px solid #efcce6;
+  width: 260px;
+  background: none;
   border-radius: 12px;
-  padding: 25px 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  padding: 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .team-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+}
+
+.team-name {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "SUSE", sans-serif;
+  color: #7c73ff;
+  margin: 8px 0 4px;
+}
+
+.team-role {
+  font-size: 0.95rem;
+  font-family: "SUSE", sans-serif;
+  color: #534685;
 }
 
 .team-photo {
@@ -621,21 +639,10 @@ a {
   height: 180px;
   object-fit: cover;
   border-radius: 50%;
+  border: 4px solid #d1b3ff;
   margin-bottom: 15px;
+  transition: border-color 0.3s ease;
 }
-
-.team-name {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #333;
-  margin: 8px 0 4px;
-}
-
-.team-role {
-  font-size: 0.95rem;
-  color: #777;
-}
-
 .teamHeader {
   padding-top: 15px;
 }
